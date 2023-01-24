@@ -14,8 +14,8 @@ The "Programming Languages I know" section lists the programming languages I am 
 The "Small Code" section provides a small sample of code I have written.
 # Built With
 
--HTML
--CSS
+1. HTML
+2. CSS
 # Author
 
 Mohamed Mohamed
