@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    Home
+  </title>
+  <video autoplay = "true" loop muted id ="back-video">
+    <source src="onep.mp4" type="video/mp4">
+  </video>
+  <link rel ="icon" type  ="image/x-icon" href = "bitmap.png">
+  
+  <style>
+    #back-video{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            }
+            .content {
+                position: relative;
+                background: rgba(0, 0, 0, 0.5);
+                color: #f1f1f1;
+                width: 100%;
+                padding: 10px;
+                }
+  </style>
+</head>
+<div class = content>
+
+
+
+<body>
+  
+  
+    
+  </style>
+  <h1> What I want to be when I finish school.</h1>
+  <p1> Hello My name is Mohamed, What I want to do after school with the things I learned is to secure a software
+    engineer position at a Faang Company or promising startup.</p1>
+  <p1>I also want to build a startup on my own, maybe start a website building company.</p1>
+  <p1>And finally I would want to hopefully give back to my community and teach the younger generation.</p1>
+
+  <h2>Computer Science Courses</h2>
+  <table>
+    <tr>
+      <th>Course Number</th>
+      <th>Course Name</th>
+    </tr>
+    <tr>
+      <td>CPSC 2430</td>
+      <td><a href="firstcourse.html">Data Structures and Algorithms</a></td>
+    </tr>
+    <tr>
+      <td>CPSC 4100</td>
+      <td><a href="secondcourse.html">Design & Analysis of Algorithm</a></td>
+    </tr>
+    <tr>
+      <td>CPSC 3400</td>
+      <td><a href="thirdcourse.html">Languages and Computation</a></td>
+    </tr>
+    <tr>
+      <td>CPSC 4910</td>
+      <td>Web Development</td>
+    </tr>
+    <tr>
+      <td>CPSC 3200</td>
+      <td>Object Oriented Programming</td>
+    </tr>
+    <tr>
+      <td>CPSC 2500</td>
+      <td>Computer organization</td>
+    </tr>
+  </table>
+  <h2> Programming Languages I know</h2>
+  <ol>
+
+    <li>Python</li>
+    <li>C++</li>
+    <li>Java</li>
+    <li>Html</li>
+  </ol>
+  <h2>Small Code</h2>
+  <p>Given a string s, find the length of the longest substring without repeating characters. </p>
+  <code>
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        charSet = set()
+        l = 0;
+        res = 0
+        
+        for r in range(len(s)):
+            while s[r] in charSet:
+                charSet.remove(s[l])
+                l+=1
+            charSet.add(s[r])
+            res = max(res,r - l +1)
+        return res
+    
+  </code>
+ 
+</body>
+</div>
+</content>
+
+</html>
